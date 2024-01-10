@@ -1,0 +1,83 @@
+@keyframes rocket {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1) translateY(6%) translateX(-2%);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes comet {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3.5px) translateX(2%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes comet2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1px) translateX(1%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes figure2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(87deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes figure3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes figure4 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+@keyframes figure5 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(60deg);
+    }
+    50% {
+      transform: rotate(120deg);
+    }
+    75% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(240deg);
+    }
+}

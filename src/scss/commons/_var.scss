@@ -1,0 +1,58 @@
+//Шрифты
+$montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Helvetica, Arial, sans-serif;
+$fira: "Fira Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+ Helvetica Neue, Helvetica, Arial, sans-serif;
+  
+//  Адаптив
+$tablet: 768px;
+$tablet-big: 1024px;
+$desktop: 1280px;
+
+// Цвета
+
+$black: #000000;
+$black-1: #0d0e0f;
+$black-2: #111214;
+$blue: #4281ff;
+$red: #ff4761;
+$orange: #f4742c;
+$orange-warning: #eb771a;
+$orange-smooth: #361b06;
+$gray: #a2a9b6;
+$gray-d: #696a6b;
+$white: #ffffff;
+$white-hover: #ffffffcc;
+$text-main: #f2f4f6;
+$text-secondary: #87909f;
+$text-black: #0b0d15;
+$text-black-secondary: #363738;
+$text-gray: #6d6e73;
+$text-gray3: #828282;
+$text-blue: #5020f5;
+$bg-1: #111412;
+$bg-2: #0b1315;
+$bg-modal: #18191c;
+$bg-black: #080a11;
+$bg-gray: #292a2f;
+$bg-gray-l: #f7f8fa;
+$bg-red: #e9475a;
+$bg-block: #2c3138;
+$black-hover: #131826;
+$green: #46b75b;
+$yellow: #fcbf14;
+$green-hover: #258d3d;
+$green-grow: #0bba74;
+$border-black: #222429;
+$input-border: #282a30;
+$input-bg: #0a1615;
+$input-placeholder: #b8b8bb;
+
+//z-index
+$ui-index-1: 1; // для элементов наползающих друг на друга
+$ui-index-2: 2; // для элементов наползающих друг на друга
+$ui-index-3: 3; // для элементов наползающих друг на друга
+$ui-index-4: 4; // затемнения
+$ui-index-5: 5; // сайдбары
+$ui-index-6: 6; // модальные окна
+$ui-index-10: 10; // элементы перекрывающие все

@@ -1,0 +1,108 @@
+.figures {
+    position: absolute;
+    width: 337px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 168px);
+    pointer-events: none;
+    z-index: $ui-index-1;
+    @media (min-width: $tablet) {
+        width: 100%;
+        max-width: 726px;
+        left: calc(50% - 363px);
+    }
+    & * {
+        position: absolute;
+    }
+}
+.figure1 {
+    top: -8px;
+    left: 24px;
+    @media (min-width: $tablet) {
+        top: -37px;
+        left: -22px;
+        width: 42px;
+        height: 37px;
+    }
+}
+.figure2 {
+    top: 37px;
+    right: -10px;
+    animation: figure2 7s infinite;
+    animation-delay: -1.5s;
+    width: 30px;
+    height: 30px;
+    @media (min-width: $tablet) {
+        width: 82px;
+        height: 82px;
+        top: 114px;
+        right: -87px;
+    }
+}
+.figure3 {
+    top: 100px;
+    left: 63px;
+    animation: figure3 5s infinite;
+    width: 16px;
+    height: 16px;
+    @media (min-width: $tablet) {
+        width: 24px;
+        height: 24px;
+        top: 171px;
+        left: -27px;
+    }
+}
+.figure4 {
+    top: 112px;
+    right: 6px;
+    animation: figure4 5s infinite;
+    animation-delay: -2.5s;
+    @media (min-width: $tablet) {
+        width: 83px;
+        height: 83px;
+        right: -100px;
+        top: 274px;
+    }
+    @media (min-width: $tablet-big) {
+        right: -200px;
+    }
+}
+.figure5 {
+    width: 24px;
+    height: 24px;
+    left: -26px;
+    top: 186px;
+    animation: figure5 7s infinite;
+    @media (min-width: $tablet) {
+        width: 56px;
+        height: 56px;
+        top: 231px;
+        left: -48px;
+    }
+    @media (min-width: $tablet-big) {
+        left: -290px;
+    }
+}
+.figure6 {
+    bottom: -38px;
+    right: -2px;
+    @media (min-width: $tablet) {
+        width: 56px;
+        height: 56px;
+    }
+    @media (min-width: $tablet-big) {
+        right: -240px;
+    }
+}
+.figure7 {
+    bottom: -43px;
+    left: -10px;
+    @media (min-width: $tablet) {
+        width: 40px;
+        height: 40px;
+        bottom: 0px;
+    }
+    @media (min-width: $tablet-big) {
+        left: -240px;
+    }
+}

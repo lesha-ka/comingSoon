@@ -1,0 +1,235 @@
+.inner {
+    flex: 1 0 auto;
+    @include flex-column-center;
+    & .container {
+        position: relative;
+        z-index: $ui-index-2;
+    }
+}
+.title {
+    font-size: 0;
+    width: 100%;
+    text-align: center;
+    & img {
+        width: 172px;
+        margin: 0 auto;
+        @media (min-width: $tablet) {
+            width: 427px;
+        }
+        &.light {
+            display: none;
+            .light & {
+                display: block;
+            }
+        }
+        &.dark {
+            display: none;
+            .dark & {
+                display: block;
+            }
+        }
+    }
+}
+.subtitle {
+    max-width: 260px;
+    margin: 19px auto 0;
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.12px;
+    color: $text-gray3;
+    text-align: center;
+    @media (min-width: $tablet) {
+        font-size: 16px;
+        letter-spacing: 0.16px;
+    }
+    .dark & {
+        color: $white;
+    }
+}
+.img-wrap {
+    margin-top: 37px;
+    text-align: center;
+}
+.img {
+    display: inline-block;
+    position: relative;
+    & img {
+        max-height: 137px;
+        margin: 0 auto;
+        @media (min-width: $tablet) {
+            max-height: 319px;
+        }
+    }
+    & .comet {
+        animation: comet2 .4s infinite;
+        position: absolute;
+        left: 40%;
+        top: 19px;
+        width: 25px;
+        @media (min-width: $tablet) {
+            animation: comet .4s infinite;
+            left: 40%;
+            top: 37px;
+            width: 68px;
+        }
+    }
+    & .comet2 {
+        animation: comet2 .4s infinite;
+        position: absolute;
+        right: -15px;
+        bottom: 46px;
+        width: 30px;
+        @media (min-width: $tablet) {
+            animation: comet .4s infinite;
+            right: -72px;
+            bottom: 146px;
+            width: 86px;
+        }
+    }
+    & .rocket {
+        position: absolute;
+        left: -25px;
+        bottom: 5px;
+        width: 25px;
+        @media (min-width: $tablet) {
+            left: -80px;
+            bottom: 40px;
+            width: 65px;
+        }
+        & .animate {
+            transform-origin: bottom left;
+            animation: rocket .7s infinite;
+            z-index: -1;
+            position: relative;
+        }
+    }
+}
+.text {
+    text-align: center;
+    max-width: 308px;
+    margin: 48px auto 0;
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.12px;
+    @media (min-width: $tablet) {
+        max-width: 726px;
+        font-size: 18px;
+        letter-spacing: 0.18px;
+    }
+}
+.subscribe {
+    @include flex-center-center;
+    margin: 14px auto 0;
+    width: auto;
+    @media (min-width: $tablet) {
+        margin: 22px auto 0;
+    }
+}
+.input {
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #E0E0E0;
+    border-right: 0;
+    padding: 12px 30px;
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 0.12px;
+    color: $black;
+    width: 150px;
+    height: 41px;
+    transition: all .1s ease-in-out;
+    .dark & {
+        background-color: $bg-modal;
+        color: $white;
+    }
+    &:focus-visible {
+        border: 1px solid $green;
+        border-right: 0;
+    }
+    @media (min-width: 370px) {
+        width: 209px;
+        flex-direction: row;
+        column-gap: 24px;
+    }
+    @media (min-width: $tablet) {
+        padding: 20px 30px;
+        width: 405px;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        height: auto;
+    }
+    &::placeholder {
+        color: $text-gray3;
+    }
+}
+.btn {
+    border-radius: 0 15px 15px 0;
+    border: 1px solid $green;
+    border-left: 0;
+    padding: 12px 20px;
+    font-family: $montserrat;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 0.12px;
+    color: $white;
+    background-color: $green;
+    cursor: pointer;
+    height: 41px;
+    @media (min-width: $tablet) {
+        padding: 20px 30px;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        height: auto;
+    }
+    &::placeholder {
+        color: $text-gray3;
+    }
+}
+.socials {
+    @include flex-center-space;
+    max-width: 168px;
+    margin: 20px auto 0;
+    @media (min-width: $tablet) {
+        margin: 24px auto 0;
+    }
+}
+.social {
+    width: 24px;
+    height: 24px;
+    & a {
+        display: block;
+        transition: all .2s ease-in-out;
+        width: 100%;
+        height: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: $black;
+        &.telegram-circle {
+            mask-image: url('../img/telegram-circle.svg');
+        }
+        &.x {
+            mask-image: url('../img/x.svg');
+        }
+        &.vcru {
+            mask-image: url('../img/vcru.svg');
+        }
+        &.youtube {
+            mask-image: url('../img/youtube.svg');
+        }
+    }
+    .dark & a {
+        background-color: $white;
+    }
+    @include hover {
+        & a {
+            background-color: $text-secondary;
+        }
+    }
+}
