@@ -18,6 +18,8 @@
 .figure1 {
     top: -8px;
     left: 24px;
+    animation: figure1 7s infinite;
+    transform-origin: center;
     @media (min-width: $tablet) {
         top: -37px;
         left: -22px;
@@ -86,6 +88,7 @@
 .figure6 {
     bottom: -38px;
     right: -2px;
+    animation: figure6 7s infinite linear;
     @media (min-width: $tablet) {
         width: 56px;
         height: 56px;
@@ -97,6 +100,7 @@
 .figure7 {
     bottom: -43px;
     left: -10px;
+    animation: figure7 5s infinite;
     @media (min-width: $tablet) {
         width: 40px;
         height: 40px;
