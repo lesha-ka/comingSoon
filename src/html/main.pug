@@ -24,6 +24,7 @@
     .subscribe
         input(type="mail" placeholder="E-mail").input
         button(type="button").btn Подписаться
+    button.g-recaptcha(data-sitekey="6LdE9FUpAAAAALr7r_M7_J7WV_HF92A1N9aiYg5z" data-callback="onSubmit" data-action="submit") Я не робот
     ul.socials
         li.social
             a(href="#").telegram-circle
